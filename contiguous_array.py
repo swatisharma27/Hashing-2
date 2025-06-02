@@ -1,6 +1,7 @@
 class Solution:
     def findMaxLength(self, nums: list[int]) -> int:
         '''
+        Find the max length of the continuos array with equal number of 0's and 1's
         TC: O(n)
         AS: O(n)
         '''
@@ -22,6 +23,7 @@ class Solution:
 
         return maxSum
 
-nums = [0,1,1,1,1,1,0,0,0]
-x = Solution()
-print(x.findMaxLength(nums))
+if __name__ == '__main__':
+    nums = [0,1,1,1,1,1,0,0,0]
+    x = Solution()
+    print(x.findMaxLength(nums))
